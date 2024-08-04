@@ -11,6 +11,7 @@
       </div>
     </transition>
   </div>
+  <Footer />
 </template>
 
 <script lang="ts">
@@ -22,6 +23,7 @@ import DateTime from './components/DateTime.vue';
 import ProgressBar from './components/ProgressBar.vue';
 import cursorInit from "@/utils/cursor.js";
 import Link from './components/Link.vue';
+import Footer from './components/Footer.vue';
 
 export default defineComponent({
   components: {
@@ -30,7 +32,8 @@ export default defineComponent({
     Message,
     DateTime,
     ProgressBar,
-    Link
+    Link,
+    Footer
   },
   setup() {
     const loading = ref(true);
@@ -53,6 +56,7 @@ export default defineComponent({
 </script>
 
 <style>
+
 .fade-enter-active, .fade-leave-active {
   transition: opacity 0.5s;
 }

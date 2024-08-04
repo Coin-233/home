@@ -1,7 +1,7 @@
 <template>
     <div class="site-intro">
-      <h1>My HP</h1>
-      <p>WIP</p>
+      <h1></h1>
+      <p></p>
     </div>
   </template>
   

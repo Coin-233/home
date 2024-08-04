@@ -4,8 +4,10 @@
     <transition name="fade">
       <div v-if="!loading">
         <SiteIntro />
+        <Message />
         <DateTime />
         <ProgressBar />
+        <Link />
       </div>
     </transition>
   </div>
@@ -14,17 +16,21 @@
 <script lang="ts">
 import { defineComponent, ref, onMounted } from 'vue';
 import LoadingAnimation from './components/LoadingAnimation.vue';
+import Message from './components/Message.vue';
 import SiteIntro from './components/SiteIntro.vue';
 import DateTime from './components/DateTime.vue';
 import ProgressBar from './components/ProgressBar.vue';
 import cursorInit from "@/utils/cursor.js";
+import Link from './components/Link.vue';
 
 export default defineComponent({
   components: {
     LoadingAnimation,
     SiteIntro,
+    Message,
     DateTime,
-    ProgressBar
+    ProgressBar,
+    Link
   },
   setup() {
     const loading = ref(true);

@@ -3,7 +3,7 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: "HarmonyOS_Regular", sans-serif;
-    background-image: url(https://kasuie.cc/api/img/bg?type=regular&size=regular&r18=3);
+    background-image: url(https://bing.img.run/rand_uhd.php);
     background-repeat:no-repeat;
     background-size:cover;
     background-attachment:fixed;
@@ -18,6 +18,12 @@ body, html {
   @media (max-width: 600px) {
     #app {
       padding: 0 10px;
+    }
+  }
+
+  @media screen and (max-width: 960px){
+    body, html{
+      background-image: url(https://bing.img.run/rand_m.php);
     }
   }
 

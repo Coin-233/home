@@ -18,7 +18,7 @@ export default defineComponent({
       const year = now.getFullYear();
       const month = String(now.getMonth() + 1).padStart(2, '0');
       const day = String(now.getDate()).padStart(2, '0');
-      const dayOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][now.getDay()];
+      const dayOfWeek = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'][now.getDay()];
       formattedDateTime.value = `${year} 年 ${month} 月 ${day} 日 ${dayOfWeek}`;
 
       const hours = String(now.getHours()).padStart(2, '0');
@@ -29,7 +29,7 @@ export default defineComponent({
 
     onMounted(() => {
       updateDateTime();
-      setInterval(updateDateTime, 1000);
+      setInterval(updateDateTime, 100);
     });
 
     return {
@@ -60,6 +60,7 @@ export default defineComponent({
 }
 
 .formattedTime {
+  color: white;
   font-family: UnidreamLED;
   font-size: 75px;
   white-space: nowrap;

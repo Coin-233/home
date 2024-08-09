@@ -25,7 +25,7 @@
       };
     },
     async mounted() {
-      const response = await axios.get('/src/assets/Friends.yaml', { responseType: 'text' });
+      const response = await axios.get('/Friends.yaml', { responseType: 'text' });
       const data = yaml.load(response.data);
       if (Array.isArray(data)) {
         this.friends = data;

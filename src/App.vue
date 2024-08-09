@@ -7,6 +7,7 @@
         <Message />
         <DateTime />
         <ProgressBar />
+        <Friends />
         <Link />
       </div>
     </transition>
@@ -24,6 +25,7 @@ import ProgressBar from './components/ProgressBar.vue';
 import cursorInit from "@/utils/cursor.js";
 import Link from './components/Link.vue';
 import Footer from './components/Footer.vue';
+import Friends from './components/Friends.vue';
 
 export default defineComponent({
   components: {
@@ -33,6 +35,7 @@ export default defineComponent({
     DateTime,
     ProgressBar,
     Link,
+    Friends,
     Footer
   },
   setup() {

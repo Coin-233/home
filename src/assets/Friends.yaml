@@ -1,0 +1,14 @@
+- name: "我自己!"
+  link: "/"
+  avatar: "favicon.ico"
+  descr: "原地tp"
+
+- name: '萱辰的小窝'
+  link: 'https://onejialin.github.io/'
+  avatar: "images/avatar/onejialin.webp"
+  descr: '可爱拯救世界'
+
+- name: '申请友链'
+  link: 'mailto:me@sakuras.in'
+  avatar: 'images/icon/link-solid.svg'
+  descr: 发送邮件申请哦~

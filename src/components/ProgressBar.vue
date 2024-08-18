@@ -117,6 +117,7 @@ export default defineComponent({
   justify-content: center;
   align-items: center;
   font-family: UnidreamLED;
+  min-width: 45px;
 }
 
 .remaining-time {
